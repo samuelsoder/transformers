@@ -671,7 +671,7 @@ def main():
         )
 
     # Metric
-    metric = evaluate.load("rouge")
+    metric = evaluate.load("sari")
 
     def postprocess_text(preds, labels):
         preds = [pred.strip() for pred in preds]
